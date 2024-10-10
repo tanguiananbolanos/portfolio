@@ -6,56 +6,94 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body class="h-screen bg-slate-100">
-    <nav
-      class="border-2 border-blue-500 h-16 flex justify-between items-center"
-    >
+  <body
+    class="h-screen"
+    style="
+      background-image: url('https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    "
+  >
+    <nav class="h-fit absolute w-full z-10 flex justify-center">
       <div
-        class="border-2 rounded h-[90%] w-20 flex justify-center items-center m-1"
+        class="flex justify-between items-center shadow-lg bg-slate-200 rounded h-16 w-[90%] border-2 mt-2 p-4"
       >
-        <i class="fa-solid fa-user"></i>
-      </div>
-      <div class="border-2 border-green-500 w-fit flex justify-between">
-        <ul class="flex justify-start items-center">
-          <a href="">
-            <li
-              class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
-            >
-              Home
-            </li>
-          </a>
-          <a href="">
-            <li
-              class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
-            >
-              Skills
-            </li>
-          </a>
-          <a href="">
-            <li
-              class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
-            >
-              Resume
-            </li>
-          </a>
-          <a href="">
-            <li
-              class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
-            >
-              Contact
-            </li>
-          </a>
-        </ul>
+        <div
+          class="border-2 rounded h-[90%] w-20 flex justify-center items-center m-1"
+        >
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="border-2 border-green-500 w-fit flex justify-between">
+          <ul class="flex justify-start items-center">
+            <a href="">
+              <li
+                class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
+              >
+                Home
+              </li>
+            </a>
+            <a href="">
+              <li
+                class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
+              >
+                Skills
+              </li>
+            </a>
+            <a href="">
+              <li
+                class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
+              >
+                Resume
+              </li>
+            </a>
+            <a href="">
+              <li
+                class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
+              >
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- Page Content -->
-    <section class="border-2 border-red-500 grid grid-cols-12 grid-rows-12">
-      <div class="col-start-2 col-end-8 border-2 row-start-2">
-        <div class="text-[5em]">Hi, I'm Martin</div>
-        <div class="text-[2em]">
-          An aspiring I.T. graduate hoping to help you find solutions to your
-          problems
+    <section class="h-screen relative flex justify-center items-center">
+      <div
+        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        style="backdrop-filter: blur(2px)"
+      >
+        <div class="h-fit text-[5rem]">Hi, I'm Martin</div>
+        <div class="h-fit text-3xl">An aspiring I.T. graduate</div>
+      </div>
+    </section>
+
+    <section
+      class="h-screen border-2 border-black flex justify-center items-center"
+    >
+      <div
+        class="h-[50%] w-[90%] flex justify-center items-start p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        style="backdrop-filter: blur(2px)"
+      >
+        <div class="h-fit w-1/2 flex justify-center items-center flex-col">
+          <div class="w-[90%] break-words border-2">
+            <p class="text-4xl">
+              Martin Joseph Bolaños, An I.T. graduate of Bicol University
+              College of Science
+            </p>
+          </div>
+        </div>
+        <div class="h-fit text-3xl w-1/2 border-2">
+          <div class="w-[90%] break-words border-2">
+            <p class="text-2xl">
+              A Graduate of Batch 2024, and now preparing to integrate myself
+              into society, although inexperienced I am willing to learn the
+              necessary things I need to succeed in this venture
+            </p>
+          </div>
         </div>
       </div>
     </section>
