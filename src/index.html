@@ -9,23 +9,21 @@
   <body
     class="h-screen"
     style="
-      background-image: url('https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg');
+      background-image: url('https://images.pexels.com/photos/2129796/pexels-photo-2129796.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
     "
   >
-    <nav class="h-fit absolute w-full z-10 flex justify-center">
+    <nav class="h-fit absolute w-full z-10 flex justify-center text-[#6EACDA]">
       <div
-        class="flex justify-between items-center shadow-lg bg-slate-200 rounded h-16 w-[90%] border-2 mt-2 p-4"
+        class="flex justify-between items-center shadow-lg shadow-[#021526] bg-[#021526] rounded h-16 w-[90%] mt-2 p-4"
       >
-        <div
-          class="border-2 rounded h-[90%] w-20 flex justify-center items-center m-1"
-        >
+        <div class="rounded h-[90%] w-20 flex justify-center items-center m-1">
           <i class="fa-solid fa-user"></i>
         </div>
-        <div class="border-2 border-green-500 w-fit flex justify-between">
+        <div class="w-fit flex justify-between">
           <ul class="flex justify-start items-center">
             <a href="">
               <li
@@ -61,24 +59,24 @@
     </nav>
 
     <!-- Page Content -->
-    <section class="h-screen relative flex justify-center items-center">
+    <section
+      class="h-screen relative flex justify-center items-center text-[#6EACDA]"
+    >
       <div
-        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg bg-[#021526] bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
         <div class="h-fit text-[5rem]">Hi, I'm Martin</div>
-        <div class="h-fit text-3xl">An aspiring I.T. graduate</div>
+        <div class="h-fit text-3xl text-[#E2E2B6]">I.T.</div>
       </div>
     </section>
 
-    <section
-      class="h-screen border-2 border-black flex justify-center items-center"
-    >
+    <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[50%] w-[90%] flex justify-center items-start p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[90%] w-[90%] flex justify-center items-start p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="h-fit w-1/2 flex justify-center items-center flex-col">
+        <div class="h-full w-1/2 flex justify-center items-center flex-col">
           <div class="w-[90%] break-words border-2">
             <p class="text-4xl">
               Martin Joseph Bolaños, An I.T. graduate of Bicol University
@@ -86,13 +84,64 @@
             </p>
           </div>
         </div>
-        <div class="h-fit text-3xl w-1/2 border-2">
-          <div class="w-[90%] break-words border-2">
+        <div
+          class="h-full text-3xl w-1/2 border-2 border-red-500 flex justify-center items-center"
+        >
+          <div class="w-[90%] h-[90%] break-words border-2">
+            <div
+              class="border-2 h-[50%] object-contain flex justify-center items-center animate-spinY"
+            >
+              <img
+                class="h-full animate-spinY"
+                src="images/BULogo.png"
+                alt=""
+              />
+            </div>
             <p class="text-2xl">
               A Graduate of Batch 2024, and now preparing to integrate myself
               into society, although inexperienced I am willing to learn the
               necessary things I need to succeed in this venture
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen flex justify-center items-center">
+      <div
+        class="h-[90%] w-[90%] flex justify-center items-center p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        style="backdrop-filter: blur(2px)"
+      >
+        <div class="h-[90%] w-full flex justify-center items-center">
+          <p class="text-[3em]">Languages I know:</p>
+        </div>
+        <div class="h-[90%] w-full">
+          <ul class="w-full h-full flex justify-center items-center flex-col">
+            <li
+              class="flex justify-start items-center w-full text-[#6EACDA] hover:translate-x-[-1rem] hover:duration-200 hover:ease-in ease-out duration-200 hover:text-[#E2E2B6] cursor-pointer rounded-xl bg-black shadow-md text-center p-3 m-3 text-2xl"
+            >
+              <i class="fa-solid fa-user"></i>
+              <p class="ml-3">PHP</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen flex justify-center items-center">
+      <div
+        class="h-[90%] w-[90%] flex justify-center flex-col items-center p-5 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        style="backdrop-filter: blur(2px)"
+      >
+        <div class="h-fit w-full border-2 flex justify-center items-center">
+          <p class="text-[3em]">Languages I know:</p>
+        </div>
+        <div
+          class="border-2 border-green-500 w-full h-[90%] flex justify-center items-center flex-col overflow-y-scroll"
+        >
+          <div class="h-full w-[80%] border-2">
+            <div class="border-2 bg-slate-400 text-3xl p-2">
+              <p>TalentoAlbayano</p>
+            </div>
           </div>
         </div>
       </div>
