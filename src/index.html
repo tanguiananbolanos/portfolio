@@ -16,8 +16,8 @@
         <div class="rounded h-[90%] w-20 flex justify-center items-center">
           <i class="fa-solid fa-user"></i>
         </div>
-        <div class="w-fit mdd:flex justify-between hidden">
-          <ul class="flex justify-start items-center">
+        <div class="w-fit md:flex justify-between hidden">
+          <!-- <ul class="flex justify-start items-center">
             <a href="">
               <li
                 class="m-2 hover:shadow-md hover:border-slate-400 pl-1 pr-1 rounded flex justify-center items-center"
@@ -46,7 +46,7 @@
                 Contact
               </li>
             </a>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -61,19 +61,20 @@
         style="backdrop-filter: blur(2px)"
       >
         <div class="hidden md:block">
-          <div class="h-fit text-[5rem]">Hi, I'm Martin</div>
-          <div class="h-fit text-3xl text-[#A5D7E8]">I.T.</div>
+          <div class="h-fit text-[5rem] animate-enter">Hi, I'm Martin</div>
+          <div class="h-fit text-3xl text-[#A5D7E8] animate-reverse">I.T.</div>
         </div>
         <div
           class="md:hidden w-full h-full flex justify-center items-center flex-col relative"
         >
-          <div class="h-fit text-[2rem] w-full text-center">Hi, I'm Martin</div>
-          <div class="h-fit text-xl text-[#A5D7E8] text-end w-full mr-28">
+          <div class="h-fit text-[2rem] w-full text-center animate-enter">
+            Hi, I'm Martin
+          </div>
+          <div
+            class="h-fit text-xl text-[#A5D7E8] text-end w-full mr-28 animate-reverse"
+          >
             I.T.
           </div>
-          <!-- <div class="animate-bounce absolute bottom-8">
-            <i class="fa-solid fa-arrow-down fa-2xl"></i>
-          </div> -->
         </div>
       </div>
     </section>
@@ -81,16 +82,15 @@
     <!-- Short Info -->
     <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[90%] w-[90%] flex justify-center items-start p-5 md:p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[85%] w-[90%] flex justify-center items-start p-5 md:p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
         <!-- lg screen up -->
         <div class="h-full w-full lg:flex justify-center items-start hidden">
           <div class="h-full w-1/2 flex justify-center items-center flex-col">
             <div class="w-[90%] break-words">
-              <p class="text-[3vw]">
-                Martin Joseph Bolaños, #notabugbutafeature
-              </p>
+              <p class="text-[3vw]">Martin Joseph Bolaños</p>
+              <p class="text-[2vw]">#notabugbutafeature</p>
             </div>
           </div>
           <div class="h-full text-3xl w-1/2 flex justify-center items-center">
@@ -98,11 +98,7 @@
               <div
                 class="h-[50%] object-contain flex justify-center items-center animate-spinY"
               >
-                <img
-                  class="h-full animate-spinY"
-                  src="images/BULogo.png"
-                  alt=""
-                />
+                <img class="h-full" src="images/BULogo.png" alt="" />
               </div>
               <p class="text-[2vw]">
                 A Graduate of Batch 2024, and now preparing to integrate myself
@@ -143,24 +139,34 @@
     <!-- Skills -->
     <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[90%] w-[90%] flex justify-center items-center flex-col p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[85%] w-[90%] flex justify-center items-center flex-col p-5 lg:p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
         <div class="h-fit w-full flex justify-center items-center">
-          <p class="text-[3em]">Languages I know:</p>
+          <p class="text-[5vw] lg:text-[3vw]">Languages I know:</p>
         </div>
         <div class="h-full w-full">
-          <ul class="w-full h-full flex justify-center items-center">
-            <li class="w-32 m-5">
+          <ul
+            class="w-full h-full flex justify-center items-center flex-col md:flex-row mt-2"
+          >
+            <li
+              class="w-24 md:w-32 m-5 hover:translate-y-[-10px] hover:ease-in-out hover:duration-100 ease-out duration-100"
+            >
               <img src="./images/html.png" alt="" />
             </li>
-            <li class="w-32 m-5">
+            <li
+              class="w-24 md:w-32 m-5 hover:translate-y-[-10px] hover:ease-in-out hover:duration-100 ease-out duration-100"
+            >
               <img src="./images/css-3.png" alt="" />
             </li>
-            <li class="w-32 m-5">
+            <li
+              class="w-24 md:w-32 m-5 hover:translate-y-[-10px] hover:ease-in-out hover:duration-100 ease-out duration-100"
+            >
               <img src="./images/js.png" alt="" />
             </li>
-            <li class="w-32 m-5">
+            <li
+              class="w-24 md:w-32 m-5 hover:translate-y-[-10px] hover:ease-in-out hover:duration-100 ease-out duration-100"
+            >
               <img src="./images/php.png" alt="" />
             </li>
           </ul>
@@ -171,20 +177,22 @@
     <!-- Works -->
     <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[90%] w-[90%] flex justify-center flex-col items-center p-5 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[85%] w-[90%] flex justify-center flex-col items-center p-5 md:p-10 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
         <div class="h-fit w-full flex justify-center items-center">
-          <p class="text-[3em]">Works I've done:</p>
+          <p class="text-[4vw] md:text-[3vw]">Work/s I've done:</p>
         </div>
         <div
-          class="w-full h-[90%] flex justify-center items-center flex-col overflow-y-scroll"
+          class="w-[90%] h-full flex items-center flex-col overflow-y-scroll shadow-md shadow-[#A5D7E8]"
         >
-          <p class="bg-slate-400 text-3xl p-2 w-[80%] text-center">
+          <p
+            class="bg-slate-400 p-2 w-[80%] h-fit text-center text-[3vw] md:text-[2vw]"
+          >
             TalentoAlbayano
           </p>
           <div
-            class="h-full w-[80%] grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1"
+            class="h-full w-[80%] grid grid-cols-1 lg:grid-cols-3 gap-1 mt-5"
           >
             <div class="h-fit">
               <img src="./images/feed.png" alt="" />

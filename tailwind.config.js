@@ -8,9 +8,19 @@ module.exports = {
           "0%": { transform: "rotateY(180deg)" },
           "100%": { transform: "rotateY(360deg)" },
         },
+        enter: {
+          "0%": { transform: "translate(-100px)", opacity: "0%" },
+          "100%": { transform: "translate(0%)" },
+        },
+        enterReverse: {
+          "0%": { transform: "translate(100px)", opacity: "0%" },
+          "100%": { transform: "translate(0%)" },
+        },
       },
       animation: {
         spinY: "spin 5s linear infinite",
+        enter: "enter 2s ease-in",
+        reverse: "enterReverse 2s ease-in",
       },
     },
     screens: {
