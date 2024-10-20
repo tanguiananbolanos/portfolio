@@ -6,21 +6,12 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body
-    class="h-screen"
-    style="
-      background-image: url('https://images.pexels.com/photos/2129796/pexels-photo-2129796.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    "
-  >
+  <body class="h-screen bg-[#0B2447]">
     <nav
       class="h-fit w-full flex justify-center text-[#6EACDA] fixed top-0 z-10"
     >
       <div
-        class="flex justify-between items-center bg-[#021526] rounded h-16 w-[90%] mt-2 p-4"
+        class="flex justify-between items-center bg-[#03346E] rounded h-16 w-[90%] mt-2 p-4"
       >
         <div class="rounded h-[90%] w-20 flex justify-center items-center m-1">
           <i class="fa-solid fa-user"></i>
@@ -62,14 +53,16 @@
 
     <!-- Page Content -->
     <section
-      class="h-screen relative flex justify-center items-center text-[#6EACDA]"
+      class="h-screen relative flex justify-center items-center text-[#576CBC]"
     >
       <div
-        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg bg-[#021526] bg-opacity-50 rounded"
+        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg shadow-[#A5D7E8] rounded-xl lg:hidden"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="h-fit text-[5rem]">Hi, I'm Martin</div>
-        <div class="h-fit text-3xl text-[#E2E2B6]">I.T.</div>
+        <div class="sm:hidden">
+          <div class="h-fit text-[5rem] sm:text-[1rem]">Hi, I'm Martin</div>
+          <div class="h-fit text-3xl text-[#A5D7E8]">I.T.</div>
+        </div>
       </div>
     </section>
 
@@ -111,19 +104,25 @@
 
     <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[90%] w-[90%] flex justify-center items-center p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[90%] w-[90%] flex justify-center items-center flex-col p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="h-[90%] w-full flex justify-center items-center">
+        <div class="h-fit w-full flex justify-center items-center">
           <p class="text-[3em]">Languages I know:</p>
         </div>
-        <div class="h-[90%] w-full">
-          <ul class="w-full h-full flex justify-center items-center flex-col">
-            <li
-              class="flex justify-start items-center w-full text-[#6EACDA] hover:translate-x-[-1rem] hover:duration-200 hover:ease-in ease-out duration-200 hover:text-[#E2E2B6] cursor-pointer rounded-xl bg-black shadow-md text-center p-3 m-3 text-2xl"
-            >
-              <i class="fa-solid fa-user"></i>
-              <p class="ml-3">PHP</p>
+        <div class="h-full w-full">
+          <ul class="w-full h-full flex justify-center items-center">
+            <li class="w-32 m-5">
+              <img src="./images/html.png" alt="" />
+            </li>
+            <li class="w-32 m-5">
+              <img src="./images/css-3.png" alt="" />
+            </li>
+            <li class="w-32 m-5">
+              <img src="./images/js.png" alt="" />
+            </li>
+            <li class="w-32 m-5">
+              <img src="./images/php.png" alt="" />
             </li>
           </ul>
         </div>
@@ -135,14 +134,34 @@
         style="backdrop-filter: blur(2px)"
       >
         <div class="h-fit w-full border-2 flex justify-center items-center">
-          <p class="text-[3em]">Languages I know:</p>
+          <p class="text-[3em]">Works I've done:</p>
         </div>
         <div
           class="border-2 border-green-500 w-full h-[90%] flex justify-center items-center flex-col overflow-y-scroll"
         >
-          <div class="h-full w-[80%] border-2">
-            <div class="border-2 bg-slate-400 text-3xl p-2">
-              <p>TalentoAlbayano</p>
+          <p class="border-2 bg-slate-400 text-3xl p-2 w-[80%] text-center">
+            TalentoAlbayano
+          </p>
+          <div
+            class="h-full w-[80%] border-2 border-black grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1"
+          >
+            <div class="h-fit">
+              <img src="./images/feed.png" alt="" />
+            </div>
+            <div class="h-fit">
+              <img src="./images/events_main.png" alt="" />
+            </div>
+            <div class="h-fit">
+              <img src="./images/create_events.png" alt="" />
+            </div>
+            <div class="h-fit">
+              <img src="./images/event_focus.png" alt="" />
+            </div>
+            <div class="h-fit">
+              <img src="./images/job.png" alt="" />
+            </div>
+            <div class="h-fit">
+              <img src="./images/create_jobs.png" alt="" />
             </div>
           </div>
         </div>
