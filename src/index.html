@@ -11,12 +11,12 @@
       class="h-fit w-full flex justify-center text-[#6EACDA] fixed top-0 z-10"
     >
       <div
-        class="flex justify-between items-center bg-[#03346E] rounded h-16 w-[90%] mt-2 p-4"
+        class="flex justify-between items-center bg-[#03346E] rounded h-16 w-full mt-2 mr-2 ml-2 p-4"
       >
-        <div class="rounded h-[90%] w-20 flex justify-center items-center m-1">
+        <div class="rounded h-[90%] w-20 flex justify-center items-center">
           <i class="fa-solid fa-user"></i>
         </div>
-        <div class="w-fit flex justify-between">
+        <div class="w-fit mdd:flex justify-between hidden">
           <ul class="flex justify-start items-center">
             <a href="">
               <li
@@ -52,56 +52,95 @@
     </nav>
 
     <!-- Page Content -->
+    <!-- Hero -->
     <section
       class="h-screen relative flex justify-center items-center text-[#576CBC]"
     >
       <div
-        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-20 shadow-lg shadow-[#A5D7E8] rounded-xl lg:hidden"
+        class="mt-14 h-[85%] w-[90%] flex justify-center items-start flex-col p-5 md:p-20 shadow-lg shadow-[#A5D7E8] rounded-xl"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="sm:hidden">
-          <div class="h-fit text-[5rem] sm:text-[1rem]">Hi, I'm Martin</div>
+        <div class="hidden md:block">
+          <div class="h-fit text-[5rem]">Hi, I'm Martin</div>
           <div class="h-fit text-3xl text-[#A5D7E8]">I.T.</div>
         </div>
+        <div
+          class="md:hidden w-full h-full flex justify-center items-center flex-col relative"
+        >
+          <div class="h-fit text-[2rem] w-full text-center">Hi, I'm Martin</div>
+          <div class="h-fit text-xl text-[#A5D7E8] text-end w-full mr-28">
+            I.T.
+          </div>
+          <!-- <div class="animate-bounce absolute bottom-8">
+            <i class="fa-solid fa-arrow-down fa-2xl"></i>
+          </div> -->
+        </div>
       </div>
     </section>
 
+    <!-- Short Info -->
     <section class="h-screen flex justify-center items-center">
       <div
-        class="h-[90%] w-[90%] flex justify-center items-start p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
+        class="h-[90%] w-[90%] flex justify-center items-start p-5 md:p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="h-full w-1/2 flex justify-center items-center flex-col">
-          <div class="w-[90%] break-words border-2">
-            <p class="text-4xl">
-              Martin Joseph Bolaños, An I.T. graduate of Bicol University
-              College of Science
-            </p>
+        <!-- lg screen up -->
+        <div class="h-full w-full lg:flex justify-center items-start hidden">
+          <div class="h-full w-1/2 flex justify-center items-center flex-col">
+            <div class="w-[90%] break-words">
+              <p class="text-[3vw]">
+                Martin Joseph Bolaños, #notabugbutafeature
+              </p>
+            </div>
+          </div>
+          <div class="h-full text-3xl w-1/2 flex justify-center items-center">
+            <div class="w-[90%] h-[90%] break-words">
+              <div
+                class="h-[50%] object-contain flex justify-center items-center animate-spinY"
+              >
+                <img
+                  class="h-full animate-spinY"
+                  src="images/BULogo.png"
+                  alt=""
+                />
+              </div>
+              <p class="text-[2vw]">
+                A Graduate of Batch 2024, and now preparing to integrate myself
+                into society, although inexperienced I am willing to learn the
+                necessary things I need to succeed in this venture
+              </p>
+            </div>
           </div>
         </div>
+        <!-- lg screen up -->
         <div
-          class="h-full text-3xl w-1/2 border-2 border-red-500 flex justify-center items-center"
+          class="h-full w-full lg:hidden flex justify-center items-center flex-col"
         >
-          <div class="w-[90%] h-[90%] break-words border-2">
-            <div
-              class="border-2 h-[50%] object-contain flex justify-center items-center animate-spinY"
-            >
-              <img
-                class="h-full animate-spinY"
-                src="images/BULogo.png"
-                alt=""
-              />
+          <div
+            class="h-[40%] object-contain flex justify-center items-center animate-spinY"
+          >
+            <img class="h-full animate-spinY" src="images/BULogo.png" alt="" />
+          </div>
+          <div class="h-fit w-full flex justify-center items-center flex-col">
+            <div class="w-full text-center break-words">
+              <p class="text-[4vw]">Martin Joseph Bolaños</p>
+              <p class="text-[3vw]">#notabugbutafeature</p>
             </div>
-            <p class="text-2xl">
-              A Graduate of Batch 2024, and now preparing to integrate myself
-              into society, although inexperienced I am willing to learn the
-              necessary things I need to succeed in this venture
-            </p>
+          </div>
+          <div class="text-3xl w-full flex justify-center items-center">
+            <div class="w-full h-fit break-words">
+              <p class="text-[4vw]">
+                A Graduate of Batch 2024, and now preparing to integrate myself
+                into society, although inexperienced I am willing to learn the
+                necessary things I need to succeed in this venture
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Skills -->
     <section class="h-screen flex justify-center items-center">
       <div
         class="h-[90%] w-[90%] flex justify-center items-center flex-col p-20 shadow-lg bg-slate-300 bg-opacity-50 rounded"
@@ -128,22 +167,24 @@
         </div>
       </div>
     </section>
+
+    <!-- Works -->
     <section class="h-screen flex justify-center items-center">
       <div
         class="h-[90%] w-[90%] flex justify-center flex-col items-center p-5 shadow-lg bg-slate-300 bg-opacity-50 rounded"
         style="backdrop-filter: blur(2px)"
       >
-        <div class="h-fit w-full border-2 flex justify-center items-center">
+        <div class="h-fit w-full flex justify-center items-center">
           <p class="text-[3em]">Works I've done:</p>
         </div>
         <div
-          class="border-2 border-green-500 w-full h-[90%] flex justify-center items-center flex-col overflow-y-scroll"
+          class="w-full h-[90%] flex justify-center items-center flex-col overflow-y-scroll"
         >
-          <p class="border-2 bg-slate-400 text-3xl p-2 w-[80%] text-center">
+          <p class="bg-slate-400 text-3xl p-2 w-[80%] text-center">
             TalentoAlbayano
           </p>
           <div
-            class="h-full w-[80%] border-2 border-black grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1"
+            class="h-full w-[80%] grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1"
           >
             <div class="h-fit">
               <img src="./images/feed.png" alt="" />
