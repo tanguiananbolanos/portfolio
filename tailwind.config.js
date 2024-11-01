@@ -4,73 +4,20 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        spin: {
-          "0%": { transform: "rotateY(180deg)" },
-          "100%": { transform: "rotateY(360deg)" },
-        },
-        enter: {
-          "0%": { transform: "translate(-100px)", opacity: "0%" },
-          "100%": { transform: "translate(0%)" },
-        },
-        enterReverse: {
-          "0%": { transform: "translate(100px)", opacity: "0%" },
-          "100%": { transform: "translate(0%)" },
-        },
-        opacity: {
+        flydiag: {
           "0%": {
-            opacity: "0%",
+            transform: "translateY(70px)",
           },
           "100%": {
-            opacity: "100%",
-          },
-        },
-        borderAnimate: {
-          "0%": {
-            borderLeft: "solid white 1px",
-            borderBottom: "none",
-            borderRight: "none",
-            borderTop: "none",
-          },
-          "25%": {
-            borderLeft: "solid white 1px",
-            borderBottom: "none",
-            borderRight: "none",
-            borderTop: "none",
-          },
-          "50%": {
-            borderLeft: "none",
-            borderBottom: "solid white 1px",
-            borderRight: "none",
-            borderTop: "none",
-          },
-          "75%": {
-            borderLeft: "none",
-            borderBottom: "none",
-            borderRight: "solid white 1px",
-            borderTop: "none",
-          },
-          "100%": {
-            borderLeft: "none",
-            borderBottom: "none",
-            borderRight: "none",
-            borderTop: "solid white 1px",
+            transform: "translateY(-1000px) translateX(500px)",
           },
         },
       },
       animation: {
-        spinY: "spin 5s linear infinite",
-        enter: "enter 2s ease-in",
-        reverse: "enterReverse 2s ease-in",
-        opacity: "opacity 2s ease-in",
-        borderAnimate: "borderAnimate 5s ease-in-out infinite",
+        flyZ: "flydiag 5s linear infinite",
+        flyX: "flydiag 10s linear infinite",
+        flyY: "flydiag 3s linear infinite",
       },
-    },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1025px",
-      xl: "1280px",
-      "2xl": "1536px",
     },
   },
   plugins: [],

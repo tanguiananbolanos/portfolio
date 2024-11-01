@@ -562,14 +562,6 @@ video {
   position: relative;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .bottom-\[-100px\] {
   bottom: -100px;
 }
@@ -630,14 +622,6 @@ video {
   display: flex;
 }
 
-.h-\[96\%\] {
-  height: 96%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -646,12 +630,12 @@ video {
   height: 10rem;
 }
 
-.w-\[98\%\] {
-  width: 98%;
+.h-\[96\%\] {
+  height: 96%;
 }
 
-.w-screen {
-  width: 100vw;
+.h-screen {
+  height: 100vh;
 }
 
 .w-10 {
@@ -662,9 +646,59 @@ video {
   width: 10rem;
 }
 
+.w-\[98\%\] {
+  width: 98%;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+@keyframes flydiag {
+  0% {
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(-1000px) translateX(500px);
+  }
+}
+
+.animate-flyX {
+  animation: flydiag 10s linear infinite;
+}
+
+@keyframes flydiag {
+  0% {
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(-1000px) translateX(500px);
+  }
+}
+
+.animate-flyY {
+  animation: flydiag 3s linear infinite;
+}
+
+@keyframes flydiag {
+  0% {
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(-1000px) translateX(500px);
+  }
+}
+
+.animate-flyZ {
+  animation: flydiag 5s linear infinite;
 }
 
 .cursor-pointer {
