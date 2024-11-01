@@ -12,7 +12,7 @@
     class="bg-[#1A1A2E] h-screen w-screen p-2 flex justify-center items-center font-mono relative"
   >
     <section
-      class="border border-slate-100 bg-[#1A1A2E] h-[96%] w-[98%] p-5 text-white"
+      class="relative border border-slate-100 h-[96%] w-[98%] p-5 text-white overflow-clip z-10"
     >
       <div class="flex justify-start items-baseline">
         <p class="text-8xl font-bold">M</p>
@@ -38,5 +38,37 @@
         </ul>
       </div>
     </section>
+
+    <!-- Flying Balls -->
+    <section class="overflow-clip h-screen w-screen border absolute">
+      <div
+        class="absolute bottom-[-100px] right-96 h-40 rounded-full w-40 border animate-flyX"
+      ></div>
+      <div
+        class="absolute bottom-[-100px] right-[700px] h-40 rounded-full w-40 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-100px] right-[600px] h-40 rounded-full w-40 border animate-flyZ"
+      ></div>
+      <div
+        class="absolute bottom-[-100px] right-[500px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-500px] right-[400px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-300px] right-[300px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-300px] right-[300px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-300px] right-[300px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+      <div
+        class="absolute bottom-[-100px] right-[200px] h-10 rounded-full w-10 border animate-flyY"
+      ></div>
+    </section>
+    <!-- Flying Balls -->
   </body>
 </html>
